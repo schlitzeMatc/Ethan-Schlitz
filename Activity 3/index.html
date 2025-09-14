@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Activity 3: Dynamic Greeting Card</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Activity 3: Dynamic Greeting Card</h1>
+
+  <div class="card-container">
+    <h2 id="greeting-message"></h2>
+    <img id="greeting-image" src="https://media.istockphoto.com/id/1371547852/photo/hello-and-welcome-written-white-lightbox-sitting-on-blue-background.jpg?s=1024x1024&w=is&k=20&c=tW2SGjvZ7EPYHkzCzUJtC6rTX0hTgFgeuQd7xaaAbLo=" alt="Greeting Image">
+    
+    <div class="controls">
+        <h2>Change Greeting</h2>
+      <button onclick="setGreeting('birthday')">Birthday</button>
+      <button onclick="setGreeting('holiday')">Holiday</button>
+      <button onclick="setGreeting('thankyou')">Thank You</button>
+      <button onclick="setRandomGreeting('random')">Random</button>
+      <button onclick="personalizeGreeting()">Personalize</button>
+    </div>
+  </div>
+
+  <div id="output"></div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

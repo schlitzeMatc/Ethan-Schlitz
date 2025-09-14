@@ -1,0 +1,31 @@
+body
+{
+    text-align: center;
+    margin: 0 auto;
+    padding: 20em;
+
+}
+.card-container
+{
+    background: white;
+    border-radius: 10px;
+    padding: 10em;
+    margin: 10px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+#greeting-image
+{
+    
+    width: 50%;
+    height: auto;
+    border: 2px solid lightyellow;
+    border-radius: 8px;
+    margin-bottom: 5em;
+}
+.controls button
+{
+    padding: 10px 15px;
+    color: white;
+    margin: 10px;
+    background: blue;
+}
