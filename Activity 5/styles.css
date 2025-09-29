@@ -1,0 +1,65 @@
+body 
+{
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 30px;
+}
+
+h1 
+{
+    color: #333;
+}
+
+.math-widget
+{
+    background: #fff;
+    padding: 20px;
+    max-width: 400px;
+    margin: 20px auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+input[type="text"] 
+{
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.buttons 
+{
+    margin: 15px 0;
+}
+
+button 
+{
+    padding: 10px 15px;
+    margin: 5px;
+    font-size: 16px;
+    
+    border: none;
+    border-radius: 5px;
+    background-color: #3498db;
+    color: white;
+    transition: background 0.3s;
+}
+#result 
+{
+    margin-top: 20px;
+    font-size: 24px;
+}
+
+#output 
+{ 
+    margin-top: 30px;
+    font-size: 14px;
+    text-align: left;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
