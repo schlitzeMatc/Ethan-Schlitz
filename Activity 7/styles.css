@@ -1,0 +1,87 @@
+body
+{
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: whitesmoke;
+}
+
+h1 
+{
+    text-align: center;
+    color: grey;
+}
+
+.catalog-container 
+{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.controls 
+{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.controls input, .controls select, .controls button 
+{
+    padding: 8px;
+    font-size: 1em;
+}
+
+#product-grid 
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.product-card 
+{
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    text-align: center;
+    padding: 10px;
+}
+
+.product-card img 
+{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.product-card h3 
+{
+    margin: 10px 0 5px;
+}
+
+.product-card p 
+{
+    margin: 5px 0;
+    color: grey;
+}
+
+.product-card .price 
+{
+    font-weight: bold;
+    color: blue;
+}
+
+button:hover 
+{
+    background-color: blue;
+    color: white;
+}
+
+@media (max-width: 600px) 
+{
+    .controls 
+    {
+        flex-direction: column;
+    }
+}
