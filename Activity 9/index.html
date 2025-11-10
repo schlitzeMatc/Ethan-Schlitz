@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Activity 9: Contact Form Validation</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+<body>
+    <h1>Activity 9: Contact Form Validation</h1>
+    <p>Open the console to see logged form interactions.</p>
+    <div class="form-container">
+        <form id="contactForm">
+            <label>Name:</label>
+            <input type="text" id="name" placeholder="Enter your name">
+            <small class="error" id="nameError"></small>
+            <label>Email:</label>
+            <input type="text" id="email" placeholder="Enter your email">
+            <small class="error" id="emailError"></small>
+            <label>Subject:</label>
+            <select id="subject">
+                <option value="">Select a subject...</option>
+                <option value="Feedback">Feedback</option>
+                <option value="Support">Support</option>
+                <option value="General Question">General Question</option>
+            </select>
+            <small class="error" id="subjectError"></small>
+            <label>Message:</label>
+            <textarea id="message" placeholder="Enter your message"></textarea>
+            <small class="error" id="messageError"></small>
+            <button type="submit" id="submitBtn">Submit</button>
+            <p id="formStatus"></p>
+        </form>
+    </div>
+    <div id="output"></div>
+    <script src="scripts.js"></script>
+</body>
+</html>
