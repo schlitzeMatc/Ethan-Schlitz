@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <title>Activity 10: Tic-Tac-Toe with localStorage</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+<body>
+    <main class="container">
+        <h1>Activity 10: Tic-Tac-Toe</h1>
+        <p>Open the console to see localStorage demonstrations. Play the game below.</p>
+        <div class="game-area">
+            <div class="game-container">
+                <div class="board" id="board" role="grid" aria-label="Tic Tac Toe board">
+                    <div class="cell" data-index="0" role="gridcell" tabindex="0"></div>
+                    <div class="cell" data-index="1" role="gridcell" tabindex="0"></div>
+                    <div class="cell" data-index="2" role="gridcell" tabindex="0"></div>
+                    <div class="cell" data-index="3" role="gridcell" tabindex="0"></div>
+                    <div class="cell" data-index="4" role="gridcell" tabindex="0"></div>
+                    <div class="cell" data-index="5" role="gridcell" tabindex="0"></div>
+                    <div class="cell" data-index="6" role="gridcell" tabindex="0"></div>
+                    <div class="cell" data-index="7" role="gridcell" tabindex="0"></div>
+                    <div class="cell" data-index="8" role="gridcell" tabindex="0"></div>
+                </div>
+                <div class="status-controls">
+                    <div class="status" id="status">Status: Loading...</div>
+                    <div class="controls">
+                        <button id="newGameBtn">New Game</button>
+                        <button id="saveBtn">Save Now</button>
+                        <button id="clearStorageBtn">Clear All Storage</button>
+                        <button id="resetStatsBtn">Reset Stats</button>
+                    </div>
+                </div>
+                <div class="stats" id="stats">
+                    <div class="stat-card">Total games: <span id="stat-total">0</span></div>
+                    <div class="stat-card">X wins: <span id="stat-xwins">0</span></div>
+                    <div class="stat-card">O wins: <span id="stat-owins">0</span></div>
+                    <div class="stat-card">Draws: <span id="stat-draws">0</span></div>
+                </div>
+            </div>
+            <div id="output" class="output">
+            </div>
+        </div>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>

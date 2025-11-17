@@ -1,0 +1,177 @@
+* { box-sizing: border-box; }
+
+body 
+{
+
+    margin: 0;
+    padding: 20px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+.container 
+{
+    width: 100%;
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+h1 
+{
+    margin: 0 0 8px;
+}
+
+p 
+{
+    margin: 0 0 18px;
+    color: gray;
+}
+
+.game-area 
+{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.game-container 
+{
+    background: white;
+    padding: 18px;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(15,23,42,0.06);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 420px;
+}
+
+.board 
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px; 
+    justify-items: stretch;
+    align-items: stretch;
+}
+
+.cell 
+{
+    aspect-ratio: 1 / 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 42px;
+    font-weight: 700;
+    border-radius: 10px;
+    box-shadow: inset 0 -2px 0 rgba(0,0,0,0.03);
+    cursor: pointer;
+    user-select: none;
+    transition: transform .08s ease, box-shadow .08s ease;
+    outline: none;
+}
+
+.cell:hover 
+{
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(2,6,23,0.06);
+}
+
+.cell:active 
+{ 
+    transform: translateY(0); 
+}
+
+.cell.x 
+{ 
+    color: blue; 
+} 
+.cell.o 
+{ 
+    color: red; 
+} 
+
+.cell.winning 
+{
+    box-shadow: 0 12px 32px rgba(34,197,94,0.12);
+    transform: scale(1.02);
+}
+
+
+.status-controls 
+{
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.status 
+{
+    font-weight: 600;
+    color: blue;
+    min-width: 160px;
+}
+
+.controls 
+{
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+button 
+{
+    background: blue;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    box-shadow: 0 6px 18px rgba(43,108,176,0.12);
+}
+
+button.secondary 
+{
+    background: transparent;
+    color: blue;
+    box-shadow: none;
+    border: 1px solid whitesmoke;
+}
+
+
+.stat-card 
+{
+    background: whitesmoke;
+    padding: 8px 10px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 700;
+    color: black;
+}
+
+.output 
+{
+    margin-top: 8px;
+    font-size: 13px;
+    color: black;
+    background: white;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 6px 16px rgba(2,6,23,0.04);
+    max-height: 220px;
+    overflow: auto;
+}
+
+
+@media (max-width: 900px) 
+{
+    .game-area { justify-content: center; }
+    .game-container { width: 100%; }
+}
+
